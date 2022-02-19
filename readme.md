@@ -56,34 +56,41 @@ If you want to follow this step by step, here's how you can do so:
     ```sh
     pytest -v --cov
     ```
-* 8. Now you have to Connect to Circle. Make a .circleci and a config.yml file with the following content:
+* 8. Now you have to Connect to Circle. A .yml file uses a data serialization language, YAML, and it has its own specification. The goal of YAML is to be human readable and to work well with modern programming languages for common, everyday tasks. In a YAML file, there are three basic ways to represent data:
+     * 1. Mappings (key-value pairs)
+     * 2. Sequences (lists)
+     * 3. Scalars (strings or numbers)
+     * 4. It is very simple to read:
+
+    *    Indentation may be used for structure.
+Colons separate key-value pairs.
+Dashes are used to create lists. Make a .circleci and a config.yml file with the following content:
     ```yml
-    # Python CircleCI 2.0 configuration file
-version: 2
-jobs:
-  build:
-    docker:
-      - image: circleci/python:3.7
+    version: 2
+    jobs:
+        build:
+            docker:
+            - image: circleci/python:3.7
 
-    working_directory: ~/repo
+            working_directory: ~/repo
 
-    steps:
-      # Step 1: obtain repo from GitHub
-      - checkout
-      # Step 2: create virtual env and install dependencies
-      - run:
-          name: install dependencies
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
-            pip install -r requirements.txt
-      # Step 3: run linter and tests
-      - run:
-          name: run tests
-          command: |
-            . venv/bin/activate
-            flake8 --exclude=venv* --statistics
-            pytest -v --cov=calculator
+            steps:
+            # Step 1: obtain repo from GitHub
+            - checkout
+            # Step 2: create virtual env and install dependencies
+            - run:
+                name: install dependencies
+                command: |
+                    python3 -m venv venv
+                    . venv/bin/activate
+                    pip install -r requirements.txt
+            # Step 3: run linter and tests
+            - run:
+                name: run tests
+                command: |
+                    . venv/bin/activate
+                    flake8 --exclude=venv* --statistics
+                    pytest -v --cov=calculator
     ```
 * 9. Now commit.
 * 10. Follow the tutorial in the link above for better understanding of CI.
