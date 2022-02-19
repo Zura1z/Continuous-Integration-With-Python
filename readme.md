@@ -94,6 +94,7 @@ Dashes are used to create lists. Make a .circleci and a config.yml file with the
     ```
 * 9. Now commit.
 * 10. Follow the tutorial in the link above for better understanding of CI.
-* 11. Congratulations! You have just learned Countinous Integrations with Python.
+## Congratulations! 
+### You have just learned Countinous Integrations with Python.
 
 
