@@ -13,7 +13,7 @@ Here's the link to the tutorial: <a>https://realpython.com/python-continuous-int
 ## Follow these steps
 
 If you want to follow this step by step, here's how you can do so:
-* 0. Create a Repo
+*  Create a Repo
 * 1. Set Up a Working Environment
  
   ```sh
@@ -52,7 +52,7 @@ If you want to follow this step by step, here's how you can do so:
     def test_multiplication(self):
     assert 100 == calculator.multiply(10, 10)
     ```
-* 7.The following command runs your test:
+* 7. The following command runs your test:
     ```sh
     pytest -v --cov
     ```
