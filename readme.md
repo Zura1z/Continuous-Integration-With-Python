@@ -92,8 +92,8 @@ Dashes are used to create lists. Make a .circleci and a config.yml file with the
                     flake8 --exclude=venv* --statistics
                     pytest -v --cov=calculator
     ```
-* 9. Now commit.
-* 10. Follow the tutorial in the link above for better understanding of CI.
+ 9. Now commit.
+ 10. Follow the tutorial in the link above for better understanding of CI.
 ## Congratulations! 
 ### You have just learned Countinous Integrations with Python.
 
