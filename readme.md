@@ -14,7 +14,7 @@ Here's the link to the tutorial: <a>https://realpython.com/python-continuous-int
 
 If you want to follow this step by step, here's how you can do so:
 *  Create a Repo
-* 1. Set Up a Working Environment
+ 1. Set Up a Working Environment
  
   ```sh
   python3 -m venv calculator
