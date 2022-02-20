@@ -19,7 +19,7 @@ If you want to follow this step by step, here's how you can do so:
   ```sh
   python3 -m venv calculator
   ```
-* 2. Write a Simple Python Example in file <b> calculator.py</b>
+ 2. Write a Simple Python Example in file <b> calculator.py</b>
 
   ```python
     def add(first_term, second_term):
@@ -30,17 +30,17 @@ If you want to follow this step by step, here's how you can do so:
     def multiply(first_term, second_term):
     return first_term * second_term
   ```
-* 3. Commit as "Add functions for addition and subtraction"
-* 4. Writing Unit tests 
+ 3. Commit as "Add functions for addition and subtraction"
+ 4. Writing Unit tests 
     ```sh
     pip install flake8 pytest pytest-cov
     pip freeze > requirements.txt
     ```
-* 5. To run your linter, execute the following:
+ 5. To run your linter, execute the following:
     ```sh
     flake8 --statistics
     ```
-* 6. Create a file called test_calculator.py and write following lines:
+ 6. Create a file called test_calculator.py and write following lines:
     ```python
     class TestCalculator:
 
@@ -52,11 +52,11 @@ If you want to follow this step by step, here's how you can do so:
     def test_multiplication(self):
     assert 100 == calculator.multiply(10, 10)
     ```
-* 7. The following command runs your test:
+ 7. The following command runs your test:
     ```sh
     pytest -v --cov
     ```
-* 8. Now you have to Connect to Circle. A .yml file uses a data serialization language, YAML, and it has its own specification. The goal of YAML is to be human readable and to work well with modern programming languages for common, everyday tasks. In a YAML file, there are three basic ways to represent data:
+ 8. Now you have to Connect to Circle. A .yml file uses a data serialization language, YAML, and it has its own specification. The goal of YAML is to be human readable and to work well with modern programming languages for common, everyday tasks. In a YAML file, there are three basic ways to represent data:
      * 1. Mappings (key-value pairs)
      * 2. Sequences (lists)
      * 3. Scalars (strings or numbers)
